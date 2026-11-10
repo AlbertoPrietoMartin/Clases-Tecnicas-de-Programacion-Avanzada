@@ -3,7 +3,7 @@ import time
 
 def enviar_recordatorio() -> None:
     print(f"Soy: {threading.current_thread().name}")
-    time.sleep(2)
+    time.sleep(5)
 
 hilo = threading.Thread(target = enviar_recordatorio)
 hilo2 = threading.Thread(target = enviar_recordatorio)
